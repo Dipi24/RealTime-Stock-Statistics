@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>0.03 * $chartWidth</fontSize>
+		</variable>
+		
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>0.015 * $chartWidth</fontSize>
+			<color>$BLACK</color>
+		</variable>
+		
+		<variable type="style" name="AxisTick">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>0.015 * $chartWidth</fontSize>
+			<color>$BLACK</color>
+		</variable>
+		
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>0.015 * $chartWidth</fontSize>
+			<color>$BLACK</color>
+		</variable>
+		
+		<variable type="style" name="a">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<color>rgba(207,52,6,1)</color>
+			<fontSize>0.015 * $chartWidth</fontSize>
+		</variable>
+		
+		<variable name="TITLE_PADDING_TOP" type="size" value="0" />
+		<variable name="TITLE_PADDING_BOTTOM" type="size" value="0.06 * $chartHeight" />	
+		<variable name="LEGEND_AXIS_PADDING" type="size" value="default: 0.025 * $chartWidth" />
+		
+	</variables>
+	
+	<spawnList>
+		<spawn source="com.arcadiacharts.context.linechart.PlotAreaElement" dest="linechart.plotareafill" />
+	</spawnList>
+
+	<chartOptions>
+		
+		<background>
+			<borderStyle>bold</borderStyle>
+			<shadowSize>0</shadowSize>
+			<style>style8</style>
+			<innerPaddingTop>0.05 * $chartHeight</innerPaddingTop>
+			<innerPaddingBottom>0.04 * $chartHeight</innerPaddingBottom>
+			<innerPaddingLeft>0.04 * $chartWidth</innerPaddingLeft>
+			<innerPaddingRight>0.04 * $chartWidth</innerPaddingRight>
+			<borderWidth>0.005 * $chartShorterSide</borderWidth>
+			<borderRoundness>0.016 * $chartWidth</borderRoundness>
+  		</background>
+		
+  		<axis position="left">
+  			<size>0.1 * $chartWidth</size>
+  			<arrowType>none</arrowType>
+  		</axis>
+  		
+  		<axis position="right">
+  			<size>0.1 * $chartWidth</size>
+  			<arrowType>none</arrowType>
+  		</axis>
+  		
+  		<axis position="bottom">
+  			<size>0.07 * $chartHeight</size>
+  			<arrowType>none</arrowType>
+  		</axis>
+  		
+  		<axisTick>
+  		</axisTick>
+  		
+  		<horizontalGridLine>
+  			<displayLine>true</displayLine>
+  			<zeroLineColor>rgba(0,0,0,0.4)</zeroLineColor>
+  			<color>rgba(0,0,0,0.2)</color>
+  		</horizontalGridLine>
+  		
+  		<verticalGridLine>
+  			<displayLine>true</displayLine>
+  			<color>rgba(0,0,0,0.2)</color>
+  		</verticalGridLine>
+  		
+		<valueBar>
+			<style>plain</style>
+			<size>minimum: 3; default: 0.015 * $chartWidth; maximum: 15</size>
+			<spacing>minimum: 4; default: 0.01 * $chartWidth; maximum: 50</spacing>
+			<innerSpacing>1</innerSpacing>
+		</valueBar>
+		
+		<valuePoint>
+			<style>plain</style>
+			<display>false</display>
+		</valuePoint>
+		
+		<valueLine>
+			<lineWidth>0.005 * $chartWidth</lineWidth>
+		</valueLine>
+		
+		<valueSlice>
+			<style>plain</style>
+		</valueSlice>
+		
+		<legend>
+			<style>transparent</style>
+		</legend>
+		
+		<legendSymbol>
+  			<size>0.0075 * $chartWidth</size>
+  			<type>square</type>
+  		</legendSymbol>
+		
+	</chartOptions>	
+	
+	<renderInstructionList>
+		
+		<instruction for="com.arcadiacharts.context.linechart.plotareafill" zIndex="50" layer="chart">
+			
+			<fillStyle value="rgba(255,255,255,0.4)" />
+			<beginPath />
+			<fillRect x="$x" y="$y" width="$w" height="$h" />
+			
+		</instruction>
+		
+	</renderInstructionList>
+</theme>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		<variable name="PREFERRED_COLOR_SCHEME" type="string" chartType="line" value="color_scheme_sand.xml"  />
+		<variable name="PREFERRED_COLOR_SCHEME" type="string" chartType="bar" value="color_scheme_blue.xml"  />
+		<variable name="PREFERRED_COLOR_SCHEME" type="string" chartType="pie" value="color_scheme_brown.xml"  />
+		<variable name="FOOTER_POSITION" type="string" value="outside" /> 
+
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:12; default:0.045 * $chartWidth; max:36</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="h1">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:12; default:0.045 * $chartWidth; max:36</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="h2">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:10; default:0.0366 * $chartWidth; max:26</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="h3">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:9; default:0.0275 * $chartWidth; max:22</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="AxisLabel">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="LegendHeader">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="LegendFooter">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="PieSliceLabel">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="a">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontWeight>normal</fontWeight>
+			<color>rgba(50,100,200,1)</color>
+		</variable>
+		<variable type="style" name="em">
+			<fontStyle>italic</fontStyle>
+		</variable>
+		<variable type="style" name="strong">
+			<fontWeight>bold</fontWeight>
+		</variable>	
+		<variable type="style" name="small">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.02 * $chartWidth; max:16</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>		
+		
+	</variables>
+
+	<chartOptions>
+		
+		<background>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<borderStyle>plain</borderStyle>
+			<style>style5</style>
+			<borderWidth>0</borderWidth>
+			<shadowSize>0</shadowSize>
+			<innerPadding>0.0333 * $chartWidth</innerPadding>
+			<borderRoundness>0</borderRoundness>
+  		</background>
+  		
+  		<plotArea>
+  			<color>rgba(255,255,255,0.25)</color>
+  		</plotArea>
+		
+  		<axis>
+  			<size>0.01 * $chartWidth</size>
+  			<arrowType>none</arrowType>
+  			<arrowSize>0</arrowSize>
+  			<displayLastTick>true</displayLastTick>
+  			<displayFirstTick>true</displayFirstTick> 			
+  		</axis>
+  		
+  		<axisTick>
+  			<paddingTopAxis>0.015*$chartShorterSide</paddingTopAxis>
+			<paddingLeftAxis>0.015*$chartShorterSide</paddingLeftAxis>
+			<paddingBottomAxis>0.015*$chartShorterSide</paddingBottomAxis>
+			<paddingRightAxis>0.015*$chartShorterSide</paddingRightAxis>
+			<size>0.015*$chartShorterSide</size>
+  		</axisTick>
+  		
+		<legend>
+  			<background>
+  				<style>transparent</style>
+  			</background>
+  			<padding>0</padding>
+  			<paddingHeader>0.0085 * $chartWidth</paddingHeader>
+  			<paddingFooter>0.0065 * $chartWidth</paddingFooter>
+			<axisPadding>0.0533 * $chartWidth</axisPadding>
+			<verticalAlignment>bottom</verticalAlignment>
+  		</legend>
+
+  		<legendSymbol>
+			<style>plain</style>
+			<shadow>false</shadow>
+			<type>square</type>
+		</legendSymbol>
+  		
+		<legendSymbol chartType="pie">
+			<type>circle</type>
+		</legendSymbol>	
+		
+		<legendSymbol chartType="line" valueSetIndex="1" >
+			<type>circle</type>
+		</legendSymbol>
+
+		<legendSymbol chartType="line" valueSetIndex="2" >
+			<type>square</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="3" >
+			<type>triangle</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="4" >
+			<type>diamond</type>
+		</legendSymbol>
+
+		<legendSymbol chartType="line" valueSetIndex="5" >
+			<type>square</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="6" >
+			<type>triangle</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="7" >
+			<type>diamond</type>
+		</legendSymbol>
+
+		<legendSymbol chartType="line" valueSetIndex="8" >
+			<type>square</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="9" >
+			<type>triangle</type>
+		</legendSymbol>
+		
+		<legendSymbol chartType="line" valueSetIndex="10" >
+			<type>diamond</type>
+		</legendSymbol>
+		
+  		<horizontalGridLine>
+  			<displayLine>true</displayLine>
+  			<zeroLineColor>rgba(200,0,0,0.3)</zeroLineColor>
+  		</horizontalGridLine>
+  		
+  		<verticalGridLine>
+
+  			<displayLine>true</displayLine>
+  		</verticalGridLine>
+  		
+		<valueBar>
+			<style>3d</style>
+		</valueBar>
+		
+		<valuePoint>
+			<style>plain</style>
+			<size>0.015 * $chartWidth</size>
+			<shadow>true</shadow>
+			<shadowColor>rgba(0,0,0,0.2)</shadowColor>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="1" >
+			<type>circle</type>
+		</valuePoint>
+
+		<valuePoint valueSetIndex="2" >
+			<type>square</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="3" >
+			<type>triangle</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="4" >
+			<type>diamond</type>
+		</valuePoint>
+
+		<valuePoint valueSetIndex="5" >
+			<type>square</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="6" >
+			<type>triangle</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="7" >
+			<type>diamond</type>
+		</valuePoint>
+
+		<valuePoint valueSetIndex="8" >
+			<type>square</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="9" >
+			<type>triangle</type>
+		</valuePoint>
+		
+		<valuePoint valueSetIndex="10" >
+			<type>diamond</type>
+		</valuePoint>
+		
+		<valueLine>
+			<lineWidth>0.00533 * $chartWidth</lineWidth>
+			
+		</valueLine>
+		
+		<valueSlice>
+			<style>plain</style>
+			<borderPadding>0.05 * $radius</borderPadding>
+		</valueSlice>
+
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>0.04 * $chartWidth</paddingBottom>
+		</title>
+		
+		<footer>
+			<paddingTop>0.01 * $chartWidth</paddingTop>
+			<paddingLeft>3</paddingLeft>
+		</footer>
+		
+		<watermark>
+			<paddingTop>0.01 * $chartWidth</paddingTop>
+			<paddingRight>3</paddingRight>
+		</watermark>
+
+		<popup>
+			<style>style5</style>
+
+		</popup>
+
+	</chartOptions>	
+
+</theme>

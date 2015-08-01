@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="FOOTER_POSITION" type="string" value="outside" />
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba(28,43,55,1)"  />		
+		<variable name="VALUE_SET_COLOR_0" type="color" inherits="DARKBLUE" />		
+		<variable name="VALUE_SET_COLOR_1" type="color" inherits="DARKRED" />	
+
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>16pt</fontSize>
+			<color>rgba(28,43,55,1)</color>
+			<reliefColor>rgba(255,255,255,0.5)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		
+		<variable type="style" name="AxisTick">
+			<fontFamily>DejaVuSans</fontFamily>
+			<color>rgba(255,255,255,1)</color>
+			<reliefColor>rgba(0,72,119,0.7)</reliefColor>
+			<reliefDir>top</reliefDir>
+		</variable>
+		
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<color>rgba(28,43,55,1)</color>
+			<reliefColor>rgba(255,255,255,0.5)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		</variable>
+		
+		<variable type="style" name="LegendHeader">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(28,43,55,1)</color>
+			<reliefColor>rgba(255,255,255,0.5)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		</variable>
+		
+		<variable type="style" name="PopupElement">
+			<color>rgba(0,0,0,1)</color>
+			<fontSize>10pt</fontSize>
+		</variable>
+		<variable type="style" name="b">
+			<fontSize>13px</fontSize>
+		</variable>
+		<variable type="style" name="i">
+			<fontSize>13px</fontSize>
+		</variable>
+		<variable type="style" name="h1">
+		    <fontFamily>DejaVuSans</fontFamily>
+			<fontSize>16px</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+		    <fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9px</fontSize>
+		</variable>
+	</variables>
+
+	<spawnList>
+		<spawn source="com.arcadiacharts.context.RootElement" dest="Background" />
+		<spawn source="com.arcadiacharts.context.linechart.ChartAreaElement" dest="linechart.Glossy" />
+	</spawnList>
+	
+	<chartOptions>
+		<background>
+			<style>style_5</style>
+			<borderRoundness>10</borderRoundness>
+			<surroundingWebsiteColor>#ffffff</surroundingWebsiteColor>
+			<borderStyle>embossed</borderStyle>
+			<innerPadding>20</innerPadding>
+			<innerPaddingTop>10</innerPaddingTop>
+			<color>rgba( 176, 212, 232, 1.0 )</color>
+		</background>
+		
+		<axis position="left">
+			<displayLine>false</displayLine>
+			<background>
+				<style>plain</style>
+				<color>rgba( 71, 92, 109, 1.0 )</color>
+			</background>
+			<size>90</size>
+		</axis>
+		
+		<axis position="bottom">			
+			<displayLine>false</displayLine>
+			<background>
+				<style>plain</style>
+				<color>rgba( 71, 92, 109, 1.0 )</color>
+			</background>
+			<size>60</size>
+			<labelRotation>45</labelRotation>
+		</axis>
+		
+		<axis position="right">
+			<displayLine>false</displayLine>
+			<background>
+				<style>plain</style>
+				<color>rgba( 71, 92, 109, 1.0 )</color>
+			</background>
+			<size>72</size>
+		</axis>
+		
+		
+		<axisTick>
+			<color>rgba(255,255,255,0.25)</color>
+			<reliefColor>rgba(20, 40, 50, 0.5)</reliefColor>
+			<size>10</size>
+			<paddingRightAxis>10</paddingRightAxis>
+			<paddingBottomAxis>10</paddingBottomAxis>
+			<paddingLeftAxis>10</paddingLeftAxis>
+		</axisTick>
+		
+		<valueLine>
+			<style>plain</style>
+			<lineWidth>2</lineWidth>
+			<shadowColor>rgba(0,0,0,0.4)</shadowColor>
+			<gradientColor></gradientColor>
+		</valueLine>
+		
+		<valueLine valueSetIndex="1">
+			<lineWidth>2</lineWidth>
+			<shadowColor>rgba(0,0,50,0.3)</shadowColor>
+			<gradientColor>rgba(50,50,200,0.3)</gradientColor>
+		</valueLine>
+		
+		<valueLine valueSetIndex="2">
+			<lineWidth>2</lineWidth>
+			<shadowColor>rgba(50,0,0,0.3)</shadowColor>
+			<gradientColor>rgba(200,50,50,0.5)</gradientColor>
+		</valueLine>
+		
+		<valuePoint>
+			<display>false</display>
+		</valuePoint>
+		
+		<horizontalGridline>
+			<color>rgba(255,255,255,0.5)</color>
+			<reliefColor>rgba( 0, 72, 119, 0.4 )</reliefColor>
+		</horizontalGridline>
+		
+		<verticalGridline>
+			<color>rgba(255,255,255,0.5)</color>
+			<reliefColor>rgba( 0, 72, 119, 0.4 )</reliefColor>
+		</verticalGridline>
+		
+		<legendSymbol>
+			<type>line</type>
+			<style>beveled</style>
+		</legendSymbol>
+		
+		<legend>
+			<width>150</width>
+			<paddingLeft>10</paddingLeft>
+			<paddingRight>0</paddingRight>
+			<paddingHeader>10</paddingHeader>
+		</legend>
+		
+		<popup>
+			<style>style2</style>
+			<backgroundColor>rgba(255,240,0,1)</backgroundColor>
+			<borderColor>rgba(255,230,0,1)</borderColor>
+		</popup>
+		
+		<title>
+			<paddingTop>0.06 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+		
+		<watermark>
+			<paddingTop>5</paddingTop>
+			<paddingRight>31</paddingRight>
+		</watermark>
+		
+	</chartOptions>
+
+	<renderInstructionList>
+		
+		
+	
+		
+		<!-- CORNERS -->
+		
+		<instruction for="com.arcadiacharts.context.BottomLeftCorner" zIndex="35" layer="chart">
+			<!-- Grayish inner area.  -->
+			<beginPath />
+			<fillStyle value="rgba( 71, 92, 109, 1.0 )" />
+			<lineWidth value="1.0" />
+			<moveTo x="$x + 2" y="$y - 1.5" />
+			<lineTo x="$x + $w +0.5" y="$y - 1.5" />
+			<lineTo x="$x + $w +0.5" y="$y+2" />
+			<lineTo x="$x + $w + 2" y="$y+2" />
+			<lineTo x="$x + $w + 2" y="$y + $h - 1" />
+			<lineTo x="$x + 2" y="$y + $h - 1" />
+			<lineTo x="$x + 2" y="$y - 2" />
+			<fill /> 
+		
+			<!-- Dark outer line -->
+			<beginPath />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<lineWidth value="1.0" />
+			<moveTo x="$x + 0.5" y="$y + 0.5 - 1" />
+			<lineTo x="$x + 0.5" y="$y + 0.5 + $h" />
+			<lineTo x="$x + 0.5 + $w" y="$y + 0.5 + $h" />
+			<stroke /> 
+			<!-- Little corner -->
+		<beginPath />
+			<strokeStyle value="rgba( 43, 64, 83, 0.0 )" />
+			<moveTo x="$x + 0.5 + $w" y="$y + 0.5 -2" />
+			<lineTo x="$x + 0.5 + $w" y="$y + 0.5" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5" />
+	<!--		<stroke />   -->
+			<!-- Bright inner line  -->
+			<beginPath />
+			<strokeStyle value="rgba( 102, 120, 134, 1.0 )" />
+			<moveTo x="$x + 0.5 + 1" y="$y + 0.5 - 2" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 0.5 + $h - 1" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5 + $h - 1" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<moveTo x="$x + 0.5 + $w - 1" y="$y + 0.5 - 2" />
+			<lineTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + 1" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5 + 1" />
+	<!--		<stroke /> -->
+		</instruction>
+		<instruction for="com.arcadiacharts.context.TopLeftCorner" zIndex="35" layer="chart">
+			<!-- Filler -->
+			<beginPath />
+			<fillStyle value="rgba( 71, 92, 109, 1.0 )" />
+			<lineWidth value="1.0" />
+			<moveTo x="$x + 2" y="$y + 2" />
+			<lineTo x="$x + $w + 2" y="$y + 2" />
+			<lineTo x="$x + $w + 2" y="$y + $h - 1" />
+			<lineTo x="$x + $w - 1" y="$y + $h - 1" />
+			<lineTo x="$x + $w - 1" y="$y + $h + 2" />
+			<lineTo x="$x + 2" y="$y + $h + 2" />
+			<fill />
+			<!-- Dark outer line -->
+			<beginPath />
+			<lineWidth value="1.0" />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<moveTo x="$x + 0.5" y="$y + 0.5 + $h + 1" />
+			<lineTo x="$x + 0.5" y="$y + 0.5" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<moveTo x="$x + 0.5 + $w" y="$y + 0.5 + $h" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5 + $h" />
+			<stroke />
+			<!-- Bright inner line -->
+			<beginPath />
+			<strokeStyle value="rgba( 102, 120, 134, 1.0 )" />
+			<moveTo x="$x + 0.5 + 1" y="$y + 0.5 + $h + 1" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 0.5 + 1" />
+			<lineTo x="$x + 0.5 + $w + 1" y="$y + 0.5 + 1" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<moveTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + $h + 1" />
+			<lineTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + $h - 1" />
+			<lineTo x="$x + 0.5 + $w + 2" y="$y + 0.5 + $h - 1" />
+			<stroke />
+		</instruction>
+		<instruction for="com.arcadiacharts.context.TopRightCorner" zIndex="35" layer="chart">
+			<!-- Filler -->
+			<beginPath />
+			<fillStyle value="rgba( 71, 92, 109, 1.0 )" />
+			<lineWidth value="1.0" />
+			<moveTo x="$x - 2" y="$y + 2" />
+			<lineTo x="$x + $w - 1" y="$y + 2" />
+			<lineTo x="$x + $w - 1" y="$y + $h + 2" />
+			<lineTo x="$x + 2" y="$y + $h + 2" />
+			<lineTo x="$x + 2" y="$y + $h - 1" />
+			<lineTo x="$x - 2" y="$y + $h - 1" />
+			<fill />
+			<!-- Dark outer line -->
+			<beginPath />
+			<lineWidth value="1.0" />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<moveTo x="$x + 0.5" y="$y + 0.5" />
+			<lineTo x="$x + 0.5 + $w" y="$y + 0.5" />
+			<lineTo x="$x + 0.5 + $w" y="$y + 0.5 + $h" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<moveTo x="$x + 0.5" y="$y + 0.5 + $h" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 0.5 + $h" />
+			<stroke />
+			<!-- Bright inner line -->
+			<beginPath />
+			<strokeStyle value="rgba( 102, 120, 134, 1.0 )" />
+			<moveTo x="$x + 0.5 - 2" y="$y + 0.5 + 1" />
+			<lineTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + 1" />
+			<lineTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + $h + 1" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<moveTo x="$x + 0.5 - 1" y="$y + 0.5 + $h - 1" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 0.5 + $h - 1" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 0.5 + $h + 1" />
+			<stroke />
+		</instruction>
+		<instruction for="com.arcadiacharts.context.BottomRightCorner" zIndex="35" layer="chart">
+			<!-- Filler -->
+			<beginPath />
+			<fillStyle value="rgba( 71, 92, 109, 1.0 )" />
+			<lineWidth value="1.0" />	
+			
+			<moveTo x="$x+0.5 " y="$y - 1.5" />
+			<lineTo x="$x + $w - 0.5" y="$y - 1.5" />
+			<lineTo x="$x + $w - 0.5" y="$y + $h - 1" />
+			<lineTo x="$x - 2" y="$y + $h - 1" />
+			<lineTo x="$x - 2" y="$y + 2" />
+			<lineTo x="$x+0.5 " y="$y + 2" />
+			<fill />
+			<!-- Dark outer line -->
+			<beginPath />
+			<lineWidth value="1.0" />
+			<strokeStyle value="rgba( 43, 64, 83, 1.0 )" />
+			<moveTo x="$x + 0.5 + $w" y="$y + 0.5 - 1" />
+			<lineTo x="$x + 0.5 + $w" y="$y + 0.5 + $h" />
+			<lineTo x="$x + 0.5" y="$y + 0.5 + $h" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<strokeStyle value="rgba( 43, 64, 83, 0.0 )" />
+			<moveTo x="$x + 0.5 - 5" y="$y + 0.5" />
+			<lineTo x="$x + 0.5" y="$y + 0.5" />
+			<stroke />  
+			<!-- Bright inner line -->
+			<beginPath />
+			<strokeStyle value="rgba( 102, 120, 134, 1.0 )" />
+			<moveTo x="$x + 0.5 + $w - 1" y="$y + 0.5 - 2" />
+			<lineTo x="$x + 0.5 + $w - 1" y="$y + 0.5 + $h - 1" />
+			<lineTo x="$x + 0.5 - 1" y="$y + 0.5 + $h - 1" />
+			<stroke />
+			<!-- Little corner -->
+			<beginPath />
+			<strokeStyle value="rgba( 102, 120, 134, 0.0 )" />
+			<moveTo x="$x + 0.5 - 5" y="$y + 1.5 + 0" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 1.5 + 0" />
+			<lineTo x="$x + 0.5 + 1" y="$y + 1.5 - 2" />
+			<stroke />
+		</instruction>
+		
+
+		
+		
+
+		
+		
+		<!-- IMAGES -->
+		
+		<instruction for="com.arcadiacharts.context.ImageElement" zIndex="100" layer="chart">
+			<drawImage
+				image="$element"
+				sx="0" sy="0" sw="$imageWidth" sh="$imageHeight"
+				dx="$x" dy="$y" dw="$w" dh="$h"
+				/>
+		</instruction>
+		
+		<!-- CHART AREA -->
+		
+		<instruction for="com.arcadiacharts.context.linechart.ChartAreaElement" zIndex="20" layer="chart">
+			<!-- Outer gray rect -->
+			<lineWidth value="1.0" />
+			<strokeStyle value="rgba( 100, 141, 169, 1.0 )" />
+			<beginPath />
+			<strokeRect x="$x + 0.5" y="$y + 0.5" width="$w" height="$h" />
+			
+			
+			<!-- Corners -->
+			
+			<set name="grayInvisible" value="rgba(93,100,108,0.0)" />
+			<set name="grayVisible" value="rgba(93,100,108,1.0)" />
+			<set name="whiteInvisible" value="rgba(255,255,255,0.0)" />
+			<set name="whiteVisible" value="rgba(255,255,255,1.0)" />
+			
+			<horizontalGradientLine x="$x-2" y="$y-2" width="$w+5">
+				<gradient type="linear" x0="$x-2" y0="$y-2" x1="$x+$w+4" y1="$y-2">
+					<colorStop at="0.0" value="$whiteVisible" />
+					<colorStop at="0.15" value="$whiteInvisible" />
+					<colorStop at="0.85" value="$whiteInvisible" />
+					<colorStop at="1.0" value="$whiteVisible" />
+				</gradient>				
+			</horizontalGradientLine>
+			
+			<horizontalGradientLine x="$x-2" y="$y+$h+2" width="$w+5">
+				<gradient type="linear" x0="$x-2" y0="$y+$h+2" x1="$x+$w+4" y1="$y+$h+2">
+					<colorStop at="0.0" value="$whiteVisible" />
+					<colorStop at="0.15" value="$whiteInvisible" />
+					<colorStop at="0.85" value="$whiteInvisible" />
+					<colorStop at="1.0" value="$whiteVisible" />
+				</gradient>				
+			</horizontalGradientLine>
+			
+			<horizontalGradientLine x="$x-1" y="$y-1" width="$w+3">
+				<gradient type="linear" x0="$x-1" y0="$y-1" x1="$x+$w+2" y1="$y-1">
+					<colorStop at="0.0" value="$grayVisible" />
+					<colorStop at="0.09" value="$grayVisible" />
+					<colorStop at="0.19" value="$grayInvisible" />
+					<colorStop at="0.2" value="$whiteInvisible" />
+					<colorStop at="0.4" value="$whiteVisible" />
+					<colorStop at="0.6" value="$whiteVisible" />
+					<colorStop at="0.8" value="$whiteInvisible" />
+					<colorStop at="0.81" value="$grayInvisible" />
+					<colorStop at="0.91" value="$grayVisible" />
+					<colorStop at="1.0" value="$grayVisible" />
+				</gradient>				
+			</horizontalGradientLine>	
+			
+			<horizontalGradientLine x="$x-1" y="$y+$h+1" width="$w+3">
+				<gradient type="linear" x0="$x-1" y0="$y+$h+1" x1="$x+$w+2" y1="$y+$h+1">
+					<colorStop at="0.0" value="$grayVisible" />
+					<colorStop at="0.09" value="$grayVisible" />
+					<colorStop at="0.19" value="$grayInvisible" />
+					<colorStop at="0.2" value="$whiteInvisible" />
+					<colorStop at="0.4" value="$whiteVisible" />
+					<colorStop at="0.6" value="$whiteVisible" />
+					<colorStop at="0.8" value="$whiteInvisible" />
+					<colorStop at="0.81" value="$grayInvisible" />
+					<colorStop at="0.91" value="$grayVisible" />
+					<colorStop at="1.0" value="$grayVisible" />
+				</gradient>
+			</horizontalGradientLine>
+			
+			<verticalGradientLine x="$x-2" y="$y-2" height="$h+5">
+				<gradient type="linear" x0="$x-2" y0="$y-2" x1="$x-2" y1="$y+$h+2">
+					<colorStop at="0.0" value="$whiteVisible" />
+					<colorStop at="0.22" value="$whiteInvisible" />
+					<colorStop at="0.78" value="$whiteInvisible" />
+					<colorStop at="1.0" value="$whiteVisible" />
+				</gradient>				
+			</verticalGradientLine>
+			
+			<verticalGradientLine x="$x+$w+2" y="$y-2" height="$h+5">
+				<gradient type="linear" x0="$x+$w+2" y0="$y-2" x1="$x+$w+4" y1="$y+$h+2">
+					<colorStop at="0.0" value="$whiteVisible" />
+					<colorStop at="0.22" value="$whiteInvisible" />
+					<colorStop at="0.78" value="$whiteInvisible" />
+					<colorStop at="1.0" value="$whiteVisible" />
+				</gradient>				
+			</verticalGradientLine>
+			
+			<verticalGradientLine x="$x-1" y="$y-1" height="$h+3">
+				<gradient type="linear" x0="$x-1" y0="$y-1" x1="$x-1" y1="$y+$h+2">
+					<colorStop at="0.0" value="$grayVisible" />
+					<colorStop at="0.15" value="$grayVisible" />
+					<colorStop at="0.25" value="$grayInvisible" />
+					<colorStop at="0.26" value="$whiteInvisible" />
+					<colorStop at="0.5" value="$whiteVisible" />
+					<colorStop at="0.74" value="$whiteInvisible" />
+					<colorStop at="0.75" value="$grayInvisible" />
+					<colorStop at="0.85" value="$grayVisible" />
+					<colorStop at="1.0" value="$grayVisible" />
+				</gradient>
+			</verticalGradientLine>
+				
+			<verticalGradientLine x="$x+$w+1" y="$y-1" height="$h+3">
+				<gradient type="linear" x0="$x+$w+1" y0="$y-1" x1="$x+$w+1" y1="$y+$h+2">
+					<colorStop at="0.0" value="$grayVisible" />
+					<colorStop at="0.15" value="$grayVisible" />
+					<colorStop at="0.25" value="$grayInvisible" />
+					<colorStop at="0.26" value="$whiteInvisible" />
+					<colorStop at="0.5" value="$whiteVisible" />
+					<colorStop at="0.74" value="$whiteInvisible" />
+					<colorStop at="0.75" value="$grayInvisible" />
+					<colorStop at="0.85" value="$grayVisible" />
+					<colorStop at="1.0" value="$grayVisible" />
+				</gradient>
+			</verticalGradientLine>			
+			
+		</instruction>
+		
+		<!-- SPAWNED ARTIFICAL LAYERS -->		
+		<instruction for="com.arcadiacharts.context.Background" zIndex="0" layer="background">
+			<fillStyle value="rgba( 255, 255, 255, 1.0 )" />
+			
+			<stamp outerX="$x" outerY="$y" outerWidth="$w" outerHeight="$h"
+					innerX="$x + 5.5" innerY="$y + 5.5" innerWidth="$w - 11" innerHeight="$h - 11"
+					radius="10"
+					/>
+			<fill />
+			<beginPath />
+			<for name="i" from="0" to="4">
+				<strokeStyle value="rgba( 0, 0, 0, $evald[ 0.05 * $i ] )" />
+				<roundedRect
+					x="0.5 + $i" y="0.5 + $i"
+					width="$w - $i - $i" height="$h - $i - $i"
+					radius="15 - $i"
+					/>
+				<stroke />
+			</for>
+			<!-- Dark gradient line at the top of the diagram. -->
+			<fillStyle>
+				<gradient type="linear" x0="0" y0="0" x1="$w" y1="6">
+					<colorStop at="0.0" value="rgba( 0, 0, 0, 0 )" />
+					<colorStop at="0.1" value="rgba( 0, 0, 0, 0 )" />
+					<colorStop at="0.2" value="rgba( 0, 0, 0, 0.07 )" />
+					<colorStop at="0.8" value="rgba( 0, 0, 0, 0.07 )" />
+					<colorStop at="0.9" value="rgba( 0, 0, 0, 0 )" />
+					<colorStop at="1.0" value="rgba( 0, 0, 0, 0 )" />
+				</gradient>
+			</fillStyle>
+			<fillRect x="10" y="7" width="$w" height="6" />
+			<!-- Dark line -->
+			<strokeStyle value="rgba( 140, 158, 170, 1.0 )" />
+			<roundedRect x="$x + 5.5" y="$y + 5.5" width="$w - 10" height="$h - 10" radius="10" />
+			<stroke />
+			<!-- Bright white line -->
+			<strokeStyle value="rgba( 255, 255, 255, 0.7 )" />
+			<roundedRect x="$x + 6.5" y="$y + 6.5" width="$w - 12" height="$h - 12" radius="10" />
+			<stroke />
+		</instruction>
+
+		<instruction for="com.arcadiacharts.context.linechart.Glossy" zIndex="50" layer="chart">
+			
+			<fillStyle>
+				<gradient type="linear" x0="$x" y0="$y" x1="$x" y1="$y+15">
+					<colorStop at="0.0" value="rgba(255,255,255,0.4 )" />
+					<colorStop at="1.0" value="rgba(255,255,255,0.15 )" />
+				</gradient>
+			</fillStyle>
+			<beginPath />
+			<fillRect x="$x" y="$y" width="$w" height="15" />
+			
+		</instruction>
+
+	</renderInstructionList>
+</theme>

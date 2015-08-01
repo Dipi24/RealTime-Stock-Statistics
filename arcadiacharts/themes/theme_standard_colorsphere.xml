@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		
+		<variable name="PREFERRED_COLOR_SCHEME" type="string" value="color_scheme_darkblue.xml"  />
+		<variable name="FOOTER_POSITION" type="string" value="outside" /> 
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:12; default:0.045 * $chartWidth; max:36</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="h1">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:12; default:0.045 * $chartWidth; max:36</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="h2">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:10; default:0.0366 * $chartWidth; max:26</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="h3">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:9; default:0.0275 * $chartWidth; max:22</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="AxisLabel">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="LegendHeader">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="LegendFooter">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.022 * $chartWidth; max:22</fontSize>
+		</variable>
+		<variable type="style" name="PieSliceLabel">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:8; default:0.025 * $chartWidth; max:24</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="a">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontWeight>normal</fontWeight>
+			<color>rgba(50,100,200,1)</color>
+		</variable>
+		<variable type="style" name="em">
+			<fontStyle>italic</fontStyle>
+		</variable>
+		<variable type="style" name="strong">
+			<fontWeight>bold</fontWeight>
+		</variable>	
+		<variable type="style" name="small">
+			<fontFamily>RotisSansSerifPro</fontFamily>
+			<fontSize>min:6; default:0.02 * $chartWidth; max:16</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		
+	</variables>
+	
+	<spawnList>
+	</spawnList>
+
+	<chartOptions>
+		
+		<background>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<innerPadding>0.0333 * $chartWidth</innerPadding>
+			<borderStyle>bright</borderStyle>
+			<borderWidth>0.015 * $chartWidth</borderWidth>
+			<style>style7</style>
+			<shadowSize>0.01 * $chartWidth</shadowSize>
+			<borderRoundness>0.015 * $chartWidth</borderRoundness>
+  		</background>
+		
+  		<axis>
+  			<arrowType>none</arrowType>
+  			<arrowSize>0</arrowSize>
+  			<displayLastTick>true</displayLastTick>
+  			<displayFirstTick>true</displayFirstTick>
+  			<size>0.01 * $chartWidth</size>
+  		</axis>
+  		
+  		<axisTick>
+  			<size>0.02*$chartShorterSide</size>
+  			<paddingTopAxis>0.015*$chartShorterSide</paddingTopAxis>
+			<paddingLeftAxis>0.015*$chartShorterSide</paddingLeftAxis>
+			<paddingBottomAxis>0.015*$chartShorterSide</paddingBottomAxis>
+			<paddingRightAxis>0.015*$chartShorterSide</paddingRightAxis>
+  		</axisTick>
+  		
+  		<horizontalGridLine>
+  			<displayLine>true</displayLine>
+  			<zeroLineColor>rgba(200,0,0,0.3)</zeroLineColor>
+  			<color>rgba(255,255,255,0.4)</color>
+  		</horizontalGridLine>
+  		
+  		<verticalGridLine>
+  			<displayLine>true</displayLine>
+  			<color>rgba(255,255,255,0.34)</color>
+  		</verticalGridLine>
+  		
+		<valueBar>
+			<style>glass</style>
+		</valueBar>
+		
+		<valuePoint>
+			<style>beveled</style>
+			<size>0.012 * $chartWidth</size>
+			<shadow>true</shadow>
+			<type>circle</type>
+		</valuePoint>
+	
+		<valueLine>
+			<style>beveled</style>
+			<lineWidth>0.005 * $chartWidth</lineWidth>
+			<shadow>true</shadow>
+		</valueLine>
+		
+		<valueSlice>
+			<style>beveled</style>
+			<borderWidth>0.063 * $radius</borderWidth>
+			<borderPadding>0.025 * $radius</borderPadding>
+		</valueSlice>
+		
+		<legend>
+  			<padding>0</padding>
+			<paddingHeader>0.0085 * $chartWidth</paddingHeader>
+			<verticalAlignment>bottom</verticalAlignment>
+			<paddingHeader>0.0085 * $chartWidth</paddingHeader>
+  			<paddingFooter>0.0065 * $chartWidth</paddingFooter>
+			<axisPadding>0.0533 * $chartWidth</axisPadding>
+  		</legend>
+		
+		<legendSymbol>
+			<style>beveled</style>
+			<type>square</type>
+		</legendSymbol>
+				
+		<legendSymbol chartType="pie">
+			<type>circle</type>
+		</legendSymbol>		
+
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>0.04 * $chartWidth</paddingBottom>
+		</title>
+		
+		<footer>
+			<paddingTop>0</paddingTop>
+			<paddingLeft>0.02 * $chartWidth</paddingLeft>
+		</footer>
+
+		<popup>
+			<style>style5</style>
+		</popup>
+		
+		<watermark>
+			<paddingTop>0</paddingTop>
+			<paddingRight>0.02 * $chartWidth</paddingRight>
+		</watermark>
+
+	</chartOptions>	
+	
+	<renderInstructionList>
+		<instruction for="com.arcadiacharts.context.linechart.PlotAreaElement" zIndex="10" layer="chart">
+			<fillStyle>
+				<gradient type="linear" x0="$x" y0="$y" x1="$x" y1="$y+$h">
+					<colorStop at="0.0" value="rgba(255,255,255,0.03 )" />
+					<colorStop at="1.0" value="rgba(255,255,255,0.12 )" />
+				</gradient>
+			</fillStyle>
+			<beginPath />
+			<fillRect x="$x" y="$y" width="$w" height="$h" />	
+		</instruction>
+	</renderInstructionList>
+</theme>

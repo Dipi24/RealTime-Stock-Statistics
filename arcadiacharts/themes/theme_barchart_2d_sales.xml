@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>		
+
+		<variable name="FOOTER_POSITION" type="string" value="outside" /> 
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 255, 255, 255, 1.0 )"  />		
+		<variable name="BACKGROUND_IMAGE" type="image" value="resources/img/worldmap_bluegradient.png" /> 
+		<variable name="LOGO" type="image" value="resources/img/logo.png" />
+		
+		<variable name="VALUE_SET_COLOR_0" type="color" value="rgba(200,0,0,1)" />	
+		<variable name="VALUE_SET_COLOR_1" type="color" value="rgba(200,150,0,1)" />	
+		<variable name="VALUE_SET_COLOR_2" type="color" value="rgba(50,200,0,1)" />	
+	
+		<variable type="style" name="TitleElement">
+			<fontFamily>Bebas</fontFamily>
+			<fontSize>20px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		
+		<variable type="style" name="AxisTick">
+			<fontFamily>Bebas</fontFamily>
+			<fontSize>14px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		
+		<variable type="style" name="PopupElement">
+			<fontFamily>Bebas</fontFamily>
+			<fontSize>12px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="MarkerElementX">
+			<color>$BLACK</color>
+		</variable>
+		<variable type="style" name="MarkerElementY">
+			<color>$BLACK</color>
+		</variable>
+		<variable type="style" name="h1">
+			<fontFamily>Bebas</fontFamily>
+			<fontSize>20px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="h2">
+			<fontFamily>Bebas</fontFamily>
+			<fontSize>14px</fontSize>
+		</variable>
+		<variable type="style" name="red">
+			<fontFamily>Bebas</fontFamily>
+			<color>rgba(200,0,0,1)</color>
+		</variable>
+		<variable type="style" name="yellow">
+			<fontFamily>Bebas</fontFamily>
+			<color>rgba(200,150,0,1)</color>
+		</variable>
+		<variable type="style" name="green">
+			<fontFamily>Bebas</fontFamily>
+			<color>rgba(50,200,0,1)</color>
+		</variable>
+		<variable type="style" name="America">
+			<color>rgba(200,0,0,1)</color>
+		</variable>
+		<variable type="style" name="EMEA">
+			<color>rgba(200,150,0,1)</color>
+		</variable>
+		<variable type="style" name="Asia">
+			<color>rgba(50,200,0,1)</color>
+		</variable>
+		
+	</variables>
+	
+	<spawnList>
+		<spawn source="com.arcadiacharts.context.RootElement" dest="Background" />
+		<spawn source="com.arcadiacharts.context.RootElement" dest="Background_Image" />
+	</spawnList>
+	
+	<chartOptions>
+		
+		<background>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<shadowSize>0</shadowSize>
+			<color>rgba(0,0,0,1)</color>
+			<innerPaddingLeft>35</innerPaddingLeft>
+			<innerPaddingRight>25</innerPaddingRight>
+			<innerPaddingBottom>26</innerPaddingBottom>
+			<innerPaddingTop>25</innerPaddingTop>
+		</background>
+		
+		<legend>
+			<background>
+				<style>TRANSPARENT</style>
+			</background>
+		</legend>
+
+		<axis position="left">
+			<displayLine>false</displayLine>
+		</axis>
+		
+		<axis position="bottom">
+			<displayLine>false</displayLine>
+			<size>50</size>
+		</axis>
+		
+		<axisTick>
+			<color>rgba(0,0,0,0)</color>
+		</axisTick>
+		
+		<valueBar>
+			<style>beveled</style>
+			<sizePercentage>0.45</sizePercentage>
+			<spacingRatio>0.1</spacingRatio>
+			<axisSpacingStart>10</axisSpacingStart>
+			<axisSpacingEnd>10</axisSpacingEnd>
+		</valueBar>
+		
+		<horizontalGridLine>
+			<color>rgba(0,0,0,0)</color>
+		</horizontalGridLine>	
+		<verticalGridLine>
+			<color>rgba(0,0,0,0)</color>
+		</verticalGridLine>	
+			
+		<popup>
+			<style>style4</style>
+			<backgroundColor>rgba(80,100,130,0.7)</backgroundColor>
+			<borderColor>rgba(0,0,0,0.9)</borderColor>
+		</popup>
+	
+		<title>
+			<paddingLeft>-6</paddingLeft>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0</paddingBottom>
+			<image>
+				<padding>35</padding>
+			</image>
+		</title>
+		
+		<watermark>
+			<paddingRight>22</paddingRight>
+		</watermark>
+	
+	</chartOptions>
+
+	<renderInstructionList>
+		
+		<instruction for="com.arcadiacharts.context.RootElement" zIndex="0" layer="background">
+			
+			<fillStyle value="rgba( 255,255,255, 1.0 )" />
+			<fillRect x="0" y="0" width="$canvasWidth" height="$canvasHeight" />	
+			
+			<!-- outer shadow - moved from background because of Chrome bug-->	
+			<for name="i" from="0" to="5">
+				<beginPath />
+				<fillStyle value="rgba(0,0,0, $evald[ 0.15-0.03*$i ] )" />
+				<roundedRect x="$x+5-$i" y="$y+5-$i" width="$w-12+$i*2" height="$h-12+$i*2" radius="2+$i" />
+				<fill />						
+			</for> 
+			
+		</instruction>
+		
+		<!-- POPUP
+		
+		<instruction for="com.arcadiacharts.context.PopupElement" zIndex="1000" layer="popup">
+			
+			<beginPath />
+			<fillStyle value="rgba(0,0,0,0.3)" />
+			<fillRect x="$x+0.5" y="$y+0.5" width="$w-1" height="$h-1" />			
+			<beginPath />
+			<strokeStyle value="rgba(255,255,255,0.3)" />
+			<strokeRect x="$x - 0.5" y="$y - 0.5" width="$w" height="$h" />
+			
+		</instruction>   -->
+		
+		<instruction for="com.arcadiacharts.context.Background" zIndex="1" layer="background">
+
+		<!-- dark blue background gradient  -->
+			<fillStyle>
+				<gradient type="radial" x0="$x+$w/2" y0="$y+$h/3" r0="0" x1="$x+$w/2" y1="$y+$h/2" r1="$w/2">
+    				<colorStop at="0.0" value="rgba(0,43,86,1)" />
+					<colorStop at="1.0" value="rgba(0,10,19,1)" />
+   				</gradient>
+ 			</fillStyle>
+			<fillRect x="$x+15" y="$y+15" width="$w-35" height="$h-35" />
+			
+		<!-- Shadow of black border -->
+		<for name="i" from="0" to="9">
+				<beginPath />
+				<fillStyle value="rgba(0,0,0, $evald[ 0.05+0.01*$i ] )" />
+				<moveTo x="$x+15" y="$y+15" />
+				<lineTo x="$x+$w-20" y="$y+15" />
+				<lineTo x="$x+$w-20" y="$y+25-$i" />
+				<lineTo x="$x+25-$i" y="$y+25-$i" />
+				<lineTo x="$x+25-$i" y="$y+$h-20" />
+				<lineTo x="$x+15" y="$y+$h-20" />
+				<lineTo x="$x+15" y="$y+15" /> 
+				<fill />
+			</for>
+				
+		<!-- black border -->	
+			<fillStyle value="rgba(0,0,0,1)" />
+			<beginPath />
+			<moveTo x="$x+5" y="$y+5" />
+			<lineTo x="$x+5" y="$y+$h-10" /> 
+			<lineTo x="$x+$w-10" y="$y+$h-10" />
+			<lineTo x="$x+$w-10" y="$y+5" />
+			<lineTo x="$x+5" y="$y+5" />
+			<lineTo x="$x+15" y="$y+15" />
+			<lineTo x="$x+$w-20" y="$y+15" />
+			<lineTo x="$x+$w-20" y="$y+$h-20" />
+			<lineTo x="$x+15" y="$y+$h-20" />
+			<lineTo x="$x+15" y="$y+15" />
+			<lineTo x="$x+5" y="$y+5" />
+			<fill />
+			
+			<!-- bottom left excentric radial gradient -->
+			<fillStyle>
+				<gradient type="radial" x0="$x" y0="$y+$h-35" r0="$h*0.1" x1="$x" y1="$y+$h*2/3" r1="$h*0.4">
+    				<colorStop at="0.0" value="rgba(255,255,255,0.3)" />
+    				<colorStop at="1.0" value="rgba(255,255,255,0)" />
+   				</gradient>
+ 			</fillStyle>
+			<fill />
+			
+			<!-- top excentric radial gradient -->
+			<fillStyle>
+				<gradient type="radial" x0="$x+$w*0.46" y0="$y+15" r0="0" x1="$x+$w/2" y1="$y" r1="$h*0.61">
+    				<colorStop at="0.0" value="rgba(255,255,255,0.35)" />
+    				<colorStop at="1.0" value="rgba(255,255,255,0)" />
+   				</gradient>
+ 			</fillStyle>
+			<fill />
+
+			<!-- bottom excentric radial gradient -->
+			<fillStyle>
+				<gradient type="radial" x0="$x+$w*2/3-10" y0="$y+$h-25" r0="0" x1="$x+$w*2/3" y1="$y+$h" r1="$h*0.3">
+    				<colorStop at="0.1" value="rgba(255,255,255,0.25)" />
+    				<colorStop at="1.0" value="rgba(255,255,255,0)" />
+   				</gradient>
+ 			</fillStyle>
+			<fill />			
+			
+			<!-- right excentric radial gradient -->
+			<fillStyle>
+				<gradient type="radial" x0="$x+$w-45" y0="$y+$h*0.3" r0="0" x1="$x+$w*1.1" y1="$y+$h*0.3" r1="$h*0.66">
+    				<colorStop at="0.0" value="rgba(255,255,255,0.25)" />
+    				<colorStop at="1.0" value="rgba(255,255,255,0)" />
+   				</gradient>
+ 			</fillStyle>
+			<fill />
+			
+			<!-- Outer Glow of black border -->
+			<strokeStyle value="rgba(255,255,255,0.15)" />
+			<strokeRect x="$x+4.5" y="$y+4.5" width="$w-14" height="$h-14" />
+			<strokeStyle value="rgba(100,100,100,0.5)" />
+			<strokeRect x="$x+15.5" y="$y+15.5" width="$w-36" height="$h-36" />
+			<strokeStyle value="rgba(255,255,255,0.05)" />
+			<strokeRect x="$x+16.5" y="$y+16.5" width="$w-38" height="$h-38" />	
+			 	
+		</instruction>
+		
+		<!-- Background Image (Worldmap)-->
+		<instruction for="com.arcadiacharts.context.Background_Image" zIndex="10" layer="background">
+		<drawImage
+				image="$BACKGROUND_IMAGE"
+				dx="$x+20" dy="$y+10" 
+				sw="$imageWidth" sh="$imageHeight"
+				/>
+		</instruction>
+		
+	</renderInstructionList>
+</theme>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		
+		<variable type="color" name="VALUE_SET_COLOR_0" inherits="MAROON" />
+		<variable type="color" name="VALUE_SET_COLOR_1" inherits="NAVY" />
+		<variable type="color" name="VALUE_SET_COLOR_2" inherits="GRAY" />
+		<variable type="color" name="VALUE_SET_COLOR_3" inherits="PURPLE" />
+		<variable type="color" name="VALUE_SET_COLOR_4" inherits="OLIVE" />
+		<variable type="color" name="VALUE_SET_COLOR_5" inherits="TEAL" />
+		<variable type="color" name="VALUE_SET_COLOR_6" inherits="GREEN" />
+		<variable type="color" name="VALUE_SET_COLOR_7" inherits="BLACK" />
+		
+		<variable type="color" name="DEFAULT_TEXT_COLOR" value="rgba( 0, 0, 0, 1.0 )"  />
+				
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>15pt</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(255,255,255,1.0)</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>10pt</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="larger">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>10pt</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$WHITE</color>
+		</variable>
+		
+	</variables>
+	
+	<chartOptions>
+	
+		<background>
+			<surroundingWebsiteColor>rgba(0,0,0,1)</surroundingWebsiteColor>
+		</background>
+		
+		<valueSlice>
+			<style>3d</style> 
+		</valueSlice>
+		
+		
+		<popup>
+			<style>style4</style>
+		</popup>
+		
+		<legend>
+			<width>120</width>
+			<padding>0</padding>
+		</legend>
+
+		<title>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+
+	</chartOptions>
+
+</theme>

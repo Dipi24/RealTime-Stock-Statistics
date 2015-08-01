@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+div#chart div {
+	width:650px;
+	height:400px;
+}
+
+div.loading {
+	width:42px;
+	height:42px;
+	background: url("loading_bg.png") no-repeat center center;
+	font-family: sans-serif;
+	font-size: 0.8em;
+}
+
+div.loading div.spinner {
+	background: url("overlay_spinner.gif") no-repeat center center;
+}

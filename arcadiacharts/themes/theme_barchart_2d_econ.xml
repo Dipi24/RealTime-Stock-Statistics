@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="FOOTER_POSITION" type="string" value="inside" />
+		<variable name="BACKGROUND_IMAGE" type="image" value="resources/img/newyork_pop.jpg" />	
+		<variable name="VALUE_SET_COLOR_0" type="color" value="rgba(50,68,12,1)" />	
+		<variable name="VALUE_SET_COLOR_1" type="color" value="rgba(116,107,0,1)" />	
+		<variable name="VALUE_SET_COLOR_2" type="color" value="rgba(228,162,0,1)" />
+		<variable name="VALUE_SET_COLOR_3" type="color" value="rgba(236,91,0,1)" />
+		<variable name="VALUE_SET_COLOR_4" type="color" value="rgba(167,17,0,1)" />
+		<variable name="VALUE_SET_COLOR_5" type="color" value="rgba(0,87,77,1)" />
+
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>16pt</fontSize>
+			<fontWeight>bold</fontWeight>
+			<reliefColor>rgba(0,0,0,0.6)</reliefColor>
+			<reliefDir>top</reliefDir>
+		</variable>
+		<variable type="style" name="LegendHeaderStyle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="a">
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>14px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="LegendHeader">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>14px</fontSize>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>13px</fontSize>
+		</variable>
+	</variables>
+	
+	<chartOptions>
+		<background>
+			<innerPadding>20</innerPadding>
+			<borderWidth>0</borderWidth>
+			<color>rgba(0,0,0,1)</color>
+			<surroundingWebsiteColor>$BLACK</surroundingWebsiteColor>
+			<shadowSize>0</shadowSize>
+			<image>
+				<imageUrl>$BACKGROUND_IMAGE</imageUrl>
+			</image>
+  		</background>
+  		
+  		<axis>
+  			<color>rgba(255,255,255,1)</color>
+  			<arrowType>triangle</arrowType>	
+  		</axis>
+		
+  		
+  		<axisTick>
+  			<color>rgba(255,255,255,1)</color>
+  			<size>7</size>
+  			<paddingLeftAxis>10</paddingLeftAxis>
+  			<paddingBottomAxis>10</paddingBottomAxis>
+  		</axisTick>
+  		
+  		<verticalGridline>
+  			<color>rgba(255,255,255,0.2)</color> 			
+  		</verticalGridline>
+  		
+  		<legend>
+  			<background>
+  				<style>plain</style>
+  				<color>rgba(0,0,0,0.75)</color>
+  				<borderStyle>bold</borderStyle>
+  				<borderColor>rgba(0,0,0,1)</borderColor>
+  				<borderWidth>3</borderWidth>
+  				<borderRoundness>15</borderRoundness>
+  			</background>
+			<paddingHeader>10</paddingHeader>
+  			<padding>20</padding>
+			<paddingTop>22</paddingTop>
+			<axisPadding>10</axisPadding>
+  		</legend>
+		
+		<title>
+			<paddingTop>5</paddingTop>
+			<paddingBottom>20</paddingBottom>
+		</title>
+
+		<valueBar>
+			<style>plain</style>
+			<size>0.5</size>
+		</valueBar>
+
+	</chartOptions>
+	
+	<renderInstructionList> 
+		<!-- Balken werden als RI gezeichnet, weil die Kombination aus schwarzem Hintergrund und petrolfarbenen "Oceania"-Balken, die kleiner als 3px sind, beim Plain-Stil Probleme ergab -->
+
+		<instruction for="com.arcadiacharts.context.barchart.ValueBarElement" zIndex="100" layer="chart">
+			<set name="fillColor" value="VALUE_SET_COLOR_$valueSetIndex" />
+			<if test="$$fillColor" equals="">
+				<set name="fillColor" value="VALUE_SET_COLOR_0" />
+			</if>
+			<beginPath />
+			<fillStyle value="$$fillColor" />
+			<fillRect x="$x" y="$y" width="$w" height="$h" />
+			<strokeStyle value="$$fillColor" />
+			<strokeRect x="$x" y="$y" width="$w" height="$h" />
+		</instruction>
+		
+		<instruction for="com.arcadiacharts.context.LegendSymbolElement" zIndex="110" layer="legend">
+			<set name="fillColor" value="VALUE_SET_COLOR_$valueSetIndex" />
+			<if test="$$fillColor" equals="">
+				<set name="fillColor" value="VALUE_SET_COLOR_0" />
+			</if>
+			<beginPath />
+			<fillStyle value="$$fillColor" />
+			<fillRect x="$x-4" y="$y-5" width="8" height="8" />
+		</instruction>
+		
+	</renderInstructionList>
+	
+	
+</theme>

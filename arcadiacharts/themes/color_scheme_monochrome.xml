@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colorScheme>
+    <variables>
+    	<variable type="color" name="AXIS_COLOR" inherits="BLACK" />
+    	<variable type="color" name="AXIS_TICK_COLOR" inherits="BLACK" />
+		<variable type="color" name="HORIZONTAL_GRID_LINE_COLOR" value="rgba(0,0,0,0.2)" />
+		<variable type="color" name="VERTICAL_GRID_LINE_COLOR" value="rgba(0,0,0,0.2)" />
+		<variable type="color" name="BACKGROUND_COLOR" inherits="WHITE" />
+		<variable type="color" name="SURROUNDING_WEBSITE_COLOR" inherits="WHITE" />
+		<variable type="color" name="BACKGROUND_SHADOW_COLOR" inherits="BLACK" />
+		<variable type="color" name="BACKGROUND_BORDER_COLOR" value="rgba(238,238,238,1)" />
+		<variable type="color" name="LEGEND_COLOR" inherits="TRANSPARENT" />
+		<variable type="color" name="LEGEND_BG_COLOR" inherits="TRANSPARENT" />			
+		<variable type="color" name="PLOT_AREA_COLOR" value="rgba( 0,0,0,0 )" />
+		<variable type="color" name="CHART_AREA_COLOR" value="rgba( 0,0,0,0 )" />
+
+		<variable type="color" name="VALUE_SET_COLOR_0" value="#000000" />
+		<variable type="color" name="VALUE_SET_COLOR_1" value="#444444" />
+		<variable type="color" name="VALUE_SET_COLOR_2" value="#777777" />
+		<variable type="color" name="VALUE_SET_COLOR_3" value="#999999" />
+		<variable type="color" name="VALUE_SET_COLOR_4" value="#bbbbbb" />
+		<variable type="color" name="VALUE_SET_COLOR_5" value="#dddddd" />
+	</variables>
+</colorScheme>

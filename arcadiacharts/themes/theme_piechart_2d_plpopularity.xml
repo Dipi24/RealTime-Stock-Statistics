@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 255, 255, 255, 1.0 )"  />
+
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>18px</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(255,255,255,1.0)</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="LegendTitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<color>rgba(255,255,255,1.0)</color>
+		</variable>
+		<variable type="style" name="label">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<color>rgba(255,255,255,1.0)</color>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="larger">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="h1">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>20px</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(255,255,255,1.0)</color>
+		</variable>
+
+	</variables>
+	
+	<chartOptions>
+		
+		<valueSlice>
+			<style>3d</style>
+		</valueSlice>
+		
+		<background>
+			<color>rgba(0,0,0,1)</color>
+			<borderWidth>0</borderWidth>
+			<shadowSize>0</shadowSize>
+			<borderRoundness>0</borderRoundness>
+		</background>
+		
+		<title>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+
+	</chartOptions>
+
+</theme>

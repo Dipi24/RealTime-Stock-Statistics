@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 0, 0, 0, 1.0 )"  />
+		<variable name="SLICE_OUTLINE_COLOR_0" type="color" value="rgba(0,0,0,0)" />
+		<variable name="VALUE_SET_COLOR_0" type="color" value="rgba(82,52,14,1)" />	
+		<variable name="VALUE_SET_COLOR_1" type="color" inherits="DARKSLATEGRAY" />
+		<variable name="VALUE_SET_COLOR_2" type="color" inherits="LIGHTSLATEGRAY" />
+		<variable name="VALUE_SET_COLOR_3" type="color" inherits="LAWNGREEN" />
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>20px</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(34,20,3,1)</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<color>rgba(82,52,14,1)</color>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+		</variable>
+		<variable type="style" name="Oil">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<color>rgba(255,255,255,1)</color>
+			<reliefDir>bottom</reliefDir>
+			<reliefColor>rgba(0,0,0,0.8)</reliefColor>			
+
+		</variable>
+		<variable type="style" name="Coal">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<color>rgba(255,255,255,1)</color>
+			<reliefDir>top</reliefDir>
+			<reliefColor>rgba(0,0,0,0.8)</reliefColor>					
+
+		</variable>
+		<variable type="style" name="Gas">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<color>rgba(255,255,255,1)</color>
+			<reliefDir>bottom</reliefDir>
+			<reliefColor>rgba(0,0,0,0.4)</reliefColor>
+		</variable>
+		<variable type="style" name="Other">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<color>rgba(10,20,0,1)</color>
+			<reliefDir>bottom</reliefDir>
+			<reliefColor>$GREENYELLOW</reliefColor>
+		</variable>
+		
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>rgba(82,52,14,1)</color>
+		</variable>
+	</variables>
+	
+	<chartOptions>
+		<background>
+			<surroundingWebsiteColor>$WHITE</surroundingWebsiteColor>
+			<color>$WHITE</color>
+			<shadowSize>0</shadowSize>
+			<borderWidth>0</borderWidth>
+			<innerPadding>0</innerPadding>
+		</background>
+		
+		<valueSlice>
+			<style>beveled</style>
+			<borderWidth>0.03 * $radius</borderWidth>
+			<borderPadding>0.05 * $radius</borderPadding>
+		</valueSlice>
+		
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+		<footer>
+			<padding>0</padding>
+		</footer>
+
+	</chartOptions>
+
+</theme>

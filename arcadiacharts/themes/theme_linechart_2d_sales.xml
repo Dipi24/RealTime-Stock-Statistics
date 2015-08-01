@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 0, 0, 0, 1.0 )"  />
+		<variable name="BACKGROUND_IMAGE" type="image" value="resources/img/worldmap_transp.png" />
+		
+				<variable type="color" name="VALUE_SET_COLOR_0" value="RGBA(129,255,174,1.0)" />
+		<variable type="color" name="VALUE_SET_COLOR_1" value="RGBA(115,174,255,1.0)" />
+		<variable type="color" name="VALUE_SET_COLOR_2" value="RGBA(255,174,93,1.0)" />
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>20px</fontSize>
+			<reliefColor>rgba(255,255,255,0.5)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		<fontWeight>bold</fontWeight>
+		</variable>
+		
+		<variable type="style" name="PopupElement">
+			<color>$BLACK</color>
+		</variable>
+		<variable type="style" name="b">
+			<fontSize>13px</fontSize>
+		</variable>
+		<variable type="style" name="i">
+			<fontSize>13px</fontSize>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<color>$BLACK</color>
+			<reliefColor>rgba(255,255,255,0.6)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontSize>12px</fontSize>
+			<color>$BLACK</color>
+			<reliefColor>rgba(255,255,255,0.5)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		</variable>
+
+		
+	</variables>
+	
+	<chartOptions>
+		<background>
+			<surroundingWebsiteColor>$WHITE</surroundingWebsiteColor>
+			<borderRoundness>15</borderRoundness>	
+			<borderStyle>embossed</borderStyle>
+			<style>style6</style>
+			<image>
+				<imageUrl>$BACKGROUND_IMAGE</imageUrl>
+				<position>auto</position>
+			</image>
+			<glossyStyle>glossyStyle3</glossyStyle>
+			<innerPadding>20</innerPadding>
+			
+		</background>
+		
+  		<ValuePoint>
+  			<radius>4</radius>
+  			<style>beveled</style>
+  		</ValuePoint>
+  		
+  		<valueLine>
+  			<style>3D</style>
+  			<lineWidth>4</lineWidth>
+  			<shadowColor>rgba(0,0,0,0.3)</shadowColor>	
+  		</valueLine>
+		
+		<axis>
+			<color>rgba(0,0,0,0.35)</color>
+			<reliefColor>rgba(255,255,255,0.4)</reliefColor>
+			<arrowType>simple</arrowType>
+		</axis>
+		
+		<axisTick>
+			<color>rgba(0,0,0,0.35)</color>
+			<reliefColor>rgba(255,255,255,0.3)</reliefColor>
+			<size>7</size>
+			<paddingLeftAxis>5</paddingLeftAxis>
+			<paddingBottomAxis>5</paddingBottomAxis>
+			<paddingRightAxis>5</paddingRightAxis>
+		</axisTick>
+		
+		<horizontalGridLine>
+			<color>rgba(0,0,0,0.25)</color>
+			<reliefColor>rgba(255,255,255,0.3)</reliefColor>
+		</horizontalGridLine>
+		
+		<verticalGridLine>
+			<color>rgba(0,0,0,0.25)</color>
+			<reliefColor>rgba(255,255,255,0.3)</reliefColor>
+		</verticalGridLine>
+		
+		<legend>
+			<background>
+				<style>transparent</style>
+			</background>
+		</legend>
+		
+		<legendSymbol>
+			<radius>4</radius>
+			<style>beveled</style>
+		</legendSymbol>
+
+		<title>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+	
+	</chartOptions>
+
+</theme>

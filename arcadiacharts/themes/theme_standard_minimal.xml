@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="FOOTER_POSITION" type="string" value="inside" /> 
+		
+		<variable type="style" name="TitleElement">
+			<fontSize>0.05 * $chartWidth</fontSize>
+		</variable>
+		
+		<variable type="style" name="FooterElement">
+			<fontSize>0.025 * $chartWidth</fontSize>
+		</variable>
+		
+		<variable type="style" name="AxisTick">
+			<fontSize>0.025 * $chartWidth</fontSize>
+		</variable>
+
+		<variable type="style" name="AxisLabel">
+			<fontSize>0.025 * $chartWidth</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+
+		<variable type="style" name="PieSliceLabel">
+			<fontSize>0.025 * $chartWidth</fontSize>
+		</variable>
+		
+		<variable type="style" name="LegendTitle">
+			<fontSize>0.025 * $chartWidth</fontSize>
+		</variable>
+
+		<variable type="style" name="PopupElement">
+			<fontSize>0.025 * $chartWidth</fontSize>
+		</variable>
+		
+
+
+		
+	</variables>
+	
+	<chartOptions>
+		
+		<background>
+			<style>style1</style>
+			<color>rgba(255,255,255,1)</color>
+			<innerPadding>0.025 * $chartWidth</innerPadding>
+			<borderWidth>0</borderWidth>
+			<shadowSize>0</shadowSize>
+  		</background>
+		
+		<axis>
+			<arrowType>none</arrowType>
+		</axis>
+
+  		
+  		<axisTick>
+  			<color>rgba(0,0,0,0.6)</color>
+  			<size>0.01*$chartShorterSide</size>
+  			<paddingTopAxis>0.015*$chartShorterSide</paddingTopAxis>
+			<paddingLeftAxis>0.015*$chartShorterSide</paddingLeftAxis>
+			<paddingBottomAxis>0.015*$chartShorterSide</paddingBottomAxis>
+			<paddingRightAxis>0.015*$chartShorterSide</paddingRightAxis>
+  		</axisTick>
+  		
+  		<horizontalGridLine>
+  			<displayLine>true</displayLine>
+  			<zeroLineColor>rgba(200,0,0,0.4)</zeroLineColor>
+  			<color>rgba(0,0,0,0.1)</color>
+  		</horizontalGridLine>
+  		
+  		<verticalGridLine>
+  			<displayLine>true</displayLine>
+  			<color>rgba(0,0,0,0.1)</color>
+  		</verticalGridLine>
+  		
+		<valueBar>
+			<style>plain</style>
+			<size>minimum: 3; default: 0.015 * $chartWidth; maximum: 15</size>
+			<spacing>minimum: 4; default: 0.01 * $chartWidth; maximum: 50</spacing>
+			<innerSpacing>1</innerSpacing>
+		</valueBar>
+		
+		<valuePoint>
+			<style>plain</style>
+			<display>false</display>
+		</valuePoint>
+		
+		<valueLine>
+			<lineWidth>0.005 * $chartWidth</lineWidth>
+		</valueLine>
+		
+		<valueSlice>
+			<style>plain</style>
+			<borderPadding>0.05 * $radius</borderPadding>
+		</valueSlice>
+		
+		<legend>
+			<style>transparent</style>
+		</legend>
+		
+		<legendSymbol>
+  			<size>0.0075 * $chartWidth</size>
+  			<type>square</type>
+			<axisPadding>default: 0.025 * $chartWidth</axisPadding>
+  		</legendSymbol>
+
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>0.06 * $chartHeight</paddingBottom>
+		</title>
+		
+		<footer>
+			<paddingTop>0.025 * $chartHeight</paddingTop>
+		</footer>			
+		
+
+	</chartOptions>	
+	
+</theme>

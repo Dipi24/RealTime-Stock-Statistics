@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+				
+		<variable name="FOOTER_POSITION" type="string" value="inside" />
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba(0,49,56,1.0)"  />
+		<variable name="VALUE_SET_COLOR_0" type="color" value="rgba(175,30,0,1)" />	
+		<variable name="VALUE_SET_COLOR_1" type="color" value="rgba(105,200,31,1)" />	
+		<variable name="VALUE_SET_COLOR_2" type="color" value="rgba(12,114,140,1)" />	
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>16pt</fontSize>
+			<color>rgba(0,49,56,1.0)</color>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>6pt</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>8pt</fontSize>
+			<fontWeigt>normal</fontWeigt>
+		</variable>
+		<variable type="style" name="bold">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>10pt</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+		</variable>
+		<variable type="style" name="LegendHeader">
+			<fontFamily>DejaVuSans</fontFamily>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+		</variable>
+		<variable type="style" name="LegendFooter">
+			<fontFamily>DejaVuSans</fontFamily>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>DejaVuSans</fontFamily>
+		</variable>
+	</variables>
+	
+	<spawnList>
+		<spawn source="com.arcadiacharts.context.RootElement" dest="Background" />
+	</spawnList>
+	
+	<chartOptions>
+		<background>
+			<style>transparent</style>
+			<innerPadding>15</innerPadding>
+		</background>
+		
+		<popup>
+			<style>style1</style>
+			<backgroundColor>$WHITE</backgroundColor>>
+			<borderColor>rgba(0,49,56,1.0)"</borderColor>
+		</popup>
+			
+		<axis>
+			<color>rgba(0,49,56,1.0)</color>
+			<arrowType>triangle</arrowType>
+		</axis>
+		
+		<axisTick>
+			<color>rgba(0,49,56,1.0)</color>
+		</axisTick>>
+		
+		<horizontalGridLine>
+			<color>rgba(0,49,56,0.25 )</color>
+		</horizontalGridLine>
+		
+		<verticalGridLine>
+			<color>rgba(0,49,56,0.25 )</color>
+		</verticalGridLine>
+		
+		<legend>
+			<background>
+			  <style>transparent</style>
+			</background>
+			<padding>10</padding>
+			<paddingTop>13</paddingTop>
+			<paddingHeader>7</paddingHeader>
+			<height>250</height>
+			<width>110</width>
+			<axisPadding>20</axisPadding>
+		</legend>
+		
+		<legendSymbol>
+			<type>square</type>
+			<marginTop>-1</marginTop>
+		</legendSymbol>
+
+		<valueBar>
+			<size>10</size>
+			<spacing>minimum: 0; default:1; maximum: 5</spacing>
+			<sizePercentage>0.8</sizePercentage>
+			<spacingRatio>-2.8</spacingRatio>
+			<axisSpacingStart>10</axisSpacingStart>
+			<axisSpacingEnd>10</axisSpacingEnd>
+		</valueBar>
+
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>20</paddingBottom>
+		</title>
+		
+		<footer>
+			<paddingTop>15</paddingTop>
+		</footer>
+
+	</chartOptions>
+	
+	<renderInstructionList>
+		
+		<instruction for="com.arcadiacharts.context.Background" zIndex="1000" layer="background">
+			<fillStyle>
+				<gradient type="linear" x0="0" y0="0" x1="0" y1="$canvasHeight">
+					<colorStop at="0.0" value="rgba( 255, 222, 38, 0.1 )" />
+    				<colorStop at="0.7" value="rgba( 255, 200, 38, 0.3 )" />
+    				<colorStop at="1.0" value="rgba( 255, 222, 38, 0.5 )" />
+				</gradient>
+			</fillStyle>
+			<beginPath />
+			<fillRect x="0" y="0" width="$canvasWidth" height="$canvasHeight" />
+
+
+			<fillStyle>
+				<gradient type="linear" x0="0" y0="0" x1="0" y1="$canvasHeight">
+					<colorStop at="0.0" value="rgba( 255, 180, 38, 0.2 )" />
+    				<colorStop at="0.1" value="rgba( 255, 180, 38, 0.0 )" />
+    				<colorStop at="0.96" value="rgba( 255, 180, 38, 0.0 )" />
+    				<colorStop at="1.0" value="rgba( 255, 180, 38, 0.3 )" />
+				</gradient>
+			</fillStyle>
+			<beginPath />
+			<fillRect x="0" y="0" width="$canvasWidth" height="$canvasHeight" />
+			
+			<fillStyle>
+				<gradient type="linear" x0="0" y0="0" x1="$canvasWidth" y1="0">
+					<colorStop at="0.0" value="rgba( 255, 180, 38, 0.2 )" />
+					<colorStop at="0.02" value="rgba( 255, 180, 38, 0.1 )" />
+    				<colorStop at="0.1" value="rgba( 255, 180, 38, 0.0 )" />
+    				<colorStop at="0.9" value="rgba( 255, 180, 38, 0.0 )" />
+    				<colorStop at="0.98" value="rgba( 255, 180, 38, 0.1 )" />
+    				<colorStop at="1.0" value="rgba( 255, 180, 38, 0.2 )" />
+				</gradient>
+			</fillStyle>
+			<beginPath />
+			<fillRect x="0" y="0" width="$canvasWidth" height="$canvasHeight" />
+			
+		</instruction>
+		
+		<!-- LEGEND -->
+		
+		<instruction for="com.arcadiacharts.context.LegendElement" zIndex="100" layer="legend">
+			<!-- Shadow around top and sides -->
+			<beginPath />
+ 			<fillStyle>
+				<gradient type="linear" x0="$x+$w" y0="$y" x1="$x+$w+5" y1="$y">
+    				<colorStop at="0.0" value="rgba(135,128,88,0.5)" />
+    				<colorStop at="0.2" value="rgba(135,128,88,0.3)" />
+    				<colorStop at="1.0" value="rgba(135,128,88,0.0)" />
+				</gradient>
+			</fillStyle>
+			<moveTo x="$x+$w" y="$y" />
+			<lineTo x="$x+$w+5" y="$y" />
+			<lineTo x="$x+$w" y="$y+$h*0.6" />
+			<lineTo x="$x+$w" y="$y" />
+			<fill />
+			
+			<beginPath />
+ 			<fillStyle>
+				<gradient type="linear" x0="$x" y0="$y" x1="$x-5" y1="$y">
+    				<colorStop at="0.0" value="rgba(135,128,88,0.5)" />
+    				<colorStop at="0.2" value="rgba(135,128,88,0.3)" />
+    				<colorStop at="1.0" value="rgba(135,128,88,0.0)" />
+				</gradient>
+			</fillStyle>
+			<moveTo x="$x" y="$y" />
+			<lineTo x="$x-5" y="$y" />
+			<lineTo x="$x" y="$y+$h*0.6" />
+			<lineTo x="$x" y="$y" />
+			<fill />
+			
+			<beginPath />
+			<fillStyle>
+				<gradient type="linear" x0="$x" y0="$y" x1="$x" y1="$y-5">
+    				<colorStop at="0.0" value="rgba(135,128,88,0.5)" />
+    				<colorStop at="0.2" value="rgba(135,128,88,0.3)" />
+    				<colorStop at="1.0" value="rgba(135,128,88,0.0)" />
+				</gradient>
+			</fillStyle>
+			<fillRect x="$x" y="$y-5" width="$w" height="5"   />
+			<!-- TOP LEFT CORNER -->
+			<beginPath />
+			<fillStyle>
+   				<gradient type="radial" x0="$x" y0="$y" r0="0" x1="$x" y1="$y" r1="5">
+    				<colorStop at="0.0" value="rgba(135,128,88,0.5)" />
+    				<colorStop at="0.2" value="rgba(135,128,88,0.3)" />
+    				<colorStop at="1.0" value="rgba(135,128,88,0.0)" />
+   				</gradient>
+ 			</fillStyle>
+ 			<moveTo x="$x" y="$y" />
+ 			<arc
+				x="$x" y="$y"
+				radius="5"
+    			startAngle="$pi"
+    			endAngle="3/2*$pi"
+    			counterClockwise="false"
+    			/>
+    		<lineTo x="$x" y="$y" />
+			<fill />
+			<!-- TOP RIGHT CORNER -->
+			<beginPath />
+			<fillStyle>
+   				<gradient type="radial" x0="$x+$w" y0="$y" r0="0" x1="$x+$w" y1="$y" r1="5">
+    				<colorStop at="0.0" value="rgba(135,128,88,0.5)" />
+    				<colorStop at="0.2" value="rgba(135,128,88,0.3)" />
+    				<colorStop at="1.0" value="rgba(135,128,88,0.0)" />
+   				</gradient>
+ 			</fillStyle>
+ 			<moveTo x="$x+$w" y="$y" />
+ 			<arc
+				x="$x+$w" y="$y"
+				radius="5"
+    			startAngle="3/2*$pi"
+    			endAngle="2*$pi"
+    			counterClockwise="false"
+    			/>
+    		<lineTo x="$x+$w" y="$y" />
+			<fill />
+			
+			<!-- inner gradient --> 
+			<beginPath />
+			<fillStyle>
+				<gradient type="linear" x0="$x" y0="$y" x1="$x" y1="$y + $h">
+    				<colorStop at="0.0" value="rgba(255,200,38,0.7)" />
+    				<colorStop at="0.04" value="rgba(255,222,38,0.4)" />
+    				<colorStop at="0.1" value="rgba(255,222,38,0.2)" />
+    				<colorStop at="0.5" value="rgba(255,222,38,0.0)" />
+    				<colorStop at="1.0" value="rgba(255,222,38,0.0)" />
+				</gradient>
+			</fillStyle>	
+			<fillRect x="$x" y="$y" width="$w" height="$h" />
+			
+			<!-- Border -->
+			<beginPath />
+ 			<strokeStyle value="rgba(255,255,255,1.0 )" />
+ 			<lineWidth value="3.0" />
+ 			<moveTo x="$x" y="$y+1.5" />
+ 			<lineTo x="$x + $w" y="$y+1.5" />
+ 			<stroke />
+ 			
+ 			<fillStyle>
+ 				<gradient type="linear" x0="$x+0.5" y0="$y" x1="$x+0.5" y1="$y + $h">
+     				<colorStop at="0.0" value="rgba(255,255,255,1.0 )" />
+     				<colorStop at="0.72" value="rgba(255,255,255,0.0 )" />
+     				<colorStop at="1.0" value="rgba(255,255,255,0.0 )" />
+   				</gradient>
+ 			</fillStyle>
+ 			<beginPath />
+ 			<fillRect x="$x" y="$y" width="3" height="$h" />
+ 			<fillRect x="$x+$w-3" y="$y" width="3" height="$h" />
+		</instruction>
+		
+	</renderInstructionList>
+</theme>

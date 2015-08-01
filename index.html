@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<title>Yahoo Finance</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 
+        
+<h3 align="center" >
+Yahoo Finance Data
+</h3>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"> </script>
+<script src="css/bootstrap.css" type="text/css"></script>
+
+
+<script>
+  
+ $.ajax({
+  url: "yahoostock.php",
+  cache: false,
+  success: function(data){
+  display(data)
+	
+  }
+});
+
+  
+		function display(o)
+		{
+						
+				$("#displayArea").append(o);
+				
+		}
+           
+</script>
+
+</head>
+
+<body>
+	
+	<div id="displayArea" class="hovergallery" > </div>
+
+</body>
+
+</html>

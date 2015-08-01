@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		<variable name="FOOTER_POSITION" type="string" value="inside" />
+		<variable type="color" name="VALUE_SET_COLOR_0" value="rgba( 83,172,255,0.8 )" />
+		
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>18px</fontSize>
+		</variable>
+		<variable type="style" name="b">
+		<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>14px</fontSize>
+			<color>#ff0000</color>
+		</variable>
+		<variable type="style" name="i">
+		<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>14px</fontSize>
+			<color>#00ffff</color>
+		</variable>
+		<variable type="style" name="h1">
+		    <fontFamily>DejaVuSans</fontFamily>
+			<fontSize>22px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+		    <fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+		</variable>
+			<variable type="style" name="a">
+		    <fontFamily>DejaVuSans</fontFamily>
+		    <color>rgba( 72,157,255,1.0 )</color>
+			<fontSize>11px</fontSize>
+		</variable>
+		<variable type="style" name="AxisTick">
+		    <fontFamily>DejaVuSans</fontFamily>
+		</variable>
+		<variable type="style" name="MarkerElementX">
+			<color>$BLACK</color>
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="MarkerElementY">
+			<color>$BLACK</color>
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>11px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable name="GOLD" type="image" value="resources/img/gold_650x400.png" />
+		<variable name="GIMMICK" type="image" value="resources/img/upper_goldbar.png" />
+		<variable name="LOGO" type="image" value="resources/img/goldbarsmall2.png" />
+	</variables>
+
+	<chartOptions>
+		<background>
+			<padding>0</padding>
+			<color>rgba(0,0,0,1)</color>
+			<innerPadding>20</innerPadding>
+			<innerPaddingRight>140</innerPaddingRight>
+			<borderWidth>0</borderWidth>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<shadowSize>0</shadowSize>
+			<image>
+				<imageUrl>$GOLD</imageUrl>
+			</image>
+  		</background>
+  		
+  		<valuePoint>
+			<display>false</display>
+  		</valuePoint>
+  		
+  		<valueLine>
+  			<lineWidth>3.5</lineWidth>
+  			
+  			<outlineWidth>5</outlineWidth>
+  			<outlineColor>rgba( 28,93,255,1.0 )</outlineColor>
+  			<gradientColor>rgba(0, 83, 160, 0.7)</gradientColor>
+  			<shadowColor>rgba( 0, 0, 0, 0.5 )</shadowColor>
+  		</valueLine>
+  		
+  		<axis>
+  			<displayLine>false</displayLine>
+  			<arrowType>none</arrowType>
+  		</axis>
+		
+  		 <axis position="bottom">
+  			<color>$WHITE</color>
+  			<displayLine>true</displayLine>
+  			<arrowType>none</arrowType>
+  		</axis>
+  		
+  		<AxisTick>
+  			<color>rgba(255, 255, 255, 0.8)</color>
+  			<size>7</size>
+  			<paddingLeftAxis>5</paddingLeftAxis>
+			<paddingBottomAxis>5</paddingBottomAxis>
+  		</AxisTick>
+   
+		<horizontalGridLine>
+			<color>rgba(255, 255, 255, 0.8)</color>
+		</horizontalGridLine>
+		<verticalGridLine>
+			<color>rgba(0,0,0,0)</color>
+		</verticalGridLine>
+	
+		<marker>
+			<markerColor>rgba(254,215,0,1.0)</markerColor>
+			<markerRadius>10</markerRadius>
+			<markerLineColor>rgba(254,215,0,1.0)</markerLineColor>
+		</marker>
+		
+		<image>
+			<imageUrl>$GIMMICK</imageUrl>
+			<x>356</x>
+			<y>80</y>
+			<layer>CHART</layer>
+			<zIndex>40</zIndex>
+		</image>
+
+		<image>
+			<imageUrl>$LOGO</imageUrl>
+			<x>19</x>
+			<y>28</y>
+			<layer>CHART</layer>
+			<zIndex>40</zIndex>
+		</image>
+		
+		<title>
+			<paddingTop>0.02 * $chartHeight</paddingTop>
+			<paddingBottom>0.02 * $chartHeight</paddingBottom>
+			<paddingLeft>72</paddingLeft>
+		</title>
+		
+		<footer>
+			<paddingTop>10</paddingTop>
+		</footer>
+		
+		<watermark>
+			<paddingRight>10</paddingRight>
+		</watermark>
+
+	</chartOptions>
+</theme>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		<variable name="FOOTER_POSITION" type="string" value="inside" />
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 0, 0, 0, 1.0 )"  />
+		<variable type="color" name="GOOGLEBLUE">
+		  <baseColor red="46" green="72" blue="178" />
+		</variable>
+		<variable type="color" name="GOOGLERED">
+		  <baseColor red="238" green="0" blue="20" />
+		</variable>
+		<variable type="color" name="GOOGLEYELLOW">
+		  <baseColor red="255" green="178" blue="13" />
+		</variable>
+		<variable type="color" name="GOOGLEGREEN">
+		  <baseColor red="1" green="130" blue="13" />
+		</variable>
+		
+		<variable type="color" name="VALUE_SET_COLOR_0" inherits="GOOGLEBLUE" />
+		<variable type="color" name="VALUE_SET_COLOR_1" inherits="GOOGLERED" />
+		<variable type="color" name="VALUE_SET_COLOR_2" inherits="GOOGLEYELLOW" />
+		<variable type="color" name="VALUE_SET_COLOR_3" inherits="GOOGLEGREEN" />
+		
+		<variable type="style" name="AxisTick">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>16px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>		
+		<variable type="style" name="TitleElement">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>24px</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+				<variable type="style" name="h1">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>24px</fontSize>
+			<fontWeight>bold</fontWeight>
+		</variable>
+		<variable type="style" name="a">
+		    <textDecoration>underline</textDecoration>
+			<color>$BLUE</color>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="p">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>16px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>14px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>16px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>LinuxLibertine</fontFamily>
+			<fontSize>14px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+	</variables>
+
+	<chartOptions>
+		
+		<background>
+			<color>rgba(255,255,255,1)</color>	
+			<innerPadding>15</innerPadding>
+			<shadowSize>0</shadowSize>
+		</background>
+
+		<valueBar>
+			<style>three_d</style>
+			<shadow>false</shadow>
+			<sizePercentage>0.37</sizePercentage>
+		</valueBar>
+
+		<axis>
+  			<color>$BLACK</color>
+  			<arrowType>simple</arrowType>
+  			<arrowSize>7</arrowSize>
+  		</axis>
+  		
+  		<axis position="bottom">
+			<arrowType>none</arrowType>
+  		</axis>
+	
+		<horizontalGridLine>
+			<color>rgba(230,230,230,1)</color>
+		</horizontalGridLine>
+		
+		<verticalGridLine>
+			<color>rgba(230,230,230,1)</color>
+		</verticalGridLine>
+		
+		<axisTick>
+			<color>rgba(0,0,0,1)</color>
+		</axisTick>
+		
+		<legend>
+			<background>
+				<borderRoundness>10</borderRoundness>
+				<borderStyle>bold</borderStyle>
+				<borderWidth>2</borderWidth>
+				<borderColor>rgba(210,210,210,1)</borderColor>
+			</background>
+			<padding>18</padding>
+			<width>140</width>
+			<axisPadding>30</axisPadding>
+		</legend>
+		
+		<legendSymbol>
+			<type>square</type>
+		</legendSymbol>
+		
+		<popup>
+			<style>style1</style>
+		</popup>
+	
+		<title>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+			<image><padding>10</padding></image>
+		</title>
+		
+		<footer>
+			<paddingTop>10</paddingTop>
+		</footer>
+		
+		<watermark>
+			<paddingRight>8</paddingRight>
+		</watermark>
+		
+	</chartOptions>
+
+</theme>

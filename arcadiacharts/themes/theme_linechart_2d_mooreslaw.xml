@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		
+		<variable type="color" name="VALUE_SET_COLOR_0" inherits="GREEN" />
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="#000" />
+		
+		<variable type="style" name="h1">
+			<fontFamily>Optimer</fontFamily>
+			<fontSize>24px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>#3366cc</color>
+		</variable>
+		<variable type="style" name="a">
+		    <textDecoration>underline</textDecoration>
+			<color>#224488</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>Optimer</fontFamily>
+			<fontSize>10pt</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>#000</color>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>Optimer</fontFamily>
+			<fontSize>14px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>#000</color>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>Optimer</fontFamily>
+			<fontSize>14px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>#000</color>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>Optimer</fontFamily>
+			<fontSize>12pt</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>#000</color>
+		</variable>
+	</variables>
+
+	<chartOptions>
+		<background>
+			<padding>0</padding>
+			<padding>0</padding>
+			<color>rgba(255,255,255,1.0)</color>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<borderWidth>0</borderWidth>
+			<shadowSize>0</shadowSize>
+  		</background>
+  		
+  		<ValuePoint>
+  			<radius>3</radius>
+  			<style>beveled</style>
+  			<shadow>false</shadow>
+  		</ValuePoint>
+  		
+  		<ValueLine>
+  			<hideLine>true</hideLine>
+  		</ValueLine>
+  		
+  		<axis>
+  			<color>$BLACK</color>
+  			<arrowType>triangle</arrowType>
+  			<arrowSize>12</arrowSize>
+  		</axis>
+  		
+  		<axistick>
+  			<size>5</size>
+  			<paddingLeftAxis>7</paddingLeftAxis>
+  			<paddingBottomAxis>7</paddingBottomAxis>
+  		</axistick>
+
+
+  		<popup>
+  			<style>style3</style>
+  			<backgroundColor>rgba(255,255,155,1)</backgroundColor>
+  			<borderColor>rgba(0,0,0,1)</borderColor>  	
+  		</popup>
+   
+		<horizontalGridLine>
+			<color>rgba(0, 41, 75, 0.2)</color>
+		</horizontalGridLine>
+
+		<verticalGridLine>
+			<color>rgba(0, 41, 75, 0.2)</color>
+		</verticalGridLine>
+	
+		<title>
+			<paddingTop>0</paddingTop>
+			<paddingBottom>20</paddingBottom>
+		</title>
+		
+		<footer>
+			<paddingTop>10</paddingTop>
+		</footer>
+
+	</chartOptions>
+
+</theme>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+		
+		<variable name="FOOTER_POSITION" type="string" value="outside" />
+		<variable type="color" name="VALUE_SET_COLOR_0" value="rgba( 208, 70, 11, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_1" value="rgba( 110, 199, 255, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_2" value="rgba( 146, 189, 217, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_3" value="rgba( 112, 167, 167, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_4" value="rgba( 16, 174, 28, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_5" value="rgba( 15, 146, 225, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_6" value="rgba( 182, 0, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_7" value="rgba( 128, 128, 128, 1.0 )" />
+	
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>20px</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$WHITE</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>12px</fontSize>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<color>rgba(255,255,255,1)</color>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>11px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="larger">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>13px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="a">
+			<fontFamily>DejaVuSansCondensed</fontFamily>
+			<fontWeight>normal</fontWeight>
+			<color>rgba(51,102,204,1)</color>
+		</variable>
+	</variables>
+	
+	<chartOptions>
+		<background>
+			<innerPadding>30</innerPadding>
+			<surroundingWebsiteColor>rgba(255,255,255,1)</surroundingWebsiteColor>
+			<borderStyle>bold</borderStyle>
+			<borderColor>rgba(255,255,255,1)</borderColor>
+			<color>RGBA(36,56,91,1)</color>
+			<borderRoundness>25</borderRoundness>
+			<borderWidth>7</borderWidth>
+			<shadowSize>5</shadowSize>
+			<shadowColor>rgba(0,0,0,1)</shadowColor>
+			<style>style9</style>
+		</background>
+		
+		<valueSlice>
+			<style>indent</style>
+			<borderWidth>0.1*$radius</borderWidth>
+		</valueSlice>
+		
+		<legend>
+			<background>
+				<color>rgba(255,255,255,0.25)</color>
+				<borderRoundness>7</borderRoundness>
+			</background>
+			<padding>15</padding>
+		</legend>
+		
+		<popup>
+			<style>style4</style>
+		</popup>
+
+		<legendSymbol>
+			<marginTop>0</marginTop>
+			<marginBottom>2</marginBottom>
+		</legendSymbol>
+		
+		<title>
+			<paddingBottom>20</paddingBottom>
+		</title>
+
+		<footer>
+			<paddingLeft>12</paddingLeft>
+		</footer>
+		
+		<watermark>
+			<paddingRight>12</paddingRight>
+		</watermark>
+
+	</chartOptions>
+	
+</theme>

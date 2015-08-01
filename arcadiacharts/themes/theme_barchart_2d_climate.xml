@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 0, 0, 0, 1.0 )"  />
+		<variable name="WEATHER_ICON" type="image" value="resources/img/weather_icon4.png" /> 
+		<variable name="FOOTER_POSITION" type="string" value="outside" />	
+		<variable name="VALUE_SET_COLOR_0" type="color" value="rgba(220,0,0,1)" />	
+		<variable name="VALUE_SET_COLOR_1" type="color" value="rgba(0,0,150,1)" />		
+
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>20px</fontSize>
+			<fontWeight>bold</fontWeight>
+			<reliefColor>rgba(255,255,255,0.4)</reliefColor>
+			<reliefDir>bottom</reliefDir>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="PopupElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>12px</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<color>rgba(255,255,255,1)</color>
+			<reliefDir>top</reliefDir>
+			<reliefColor>rgba(0,0,0,0.4)</reliefColor>
+		</variable>
+		<variable type="style" name="AxisTick">
+			<fontFamily>DejaVuSans</fontFamily>
+			<color>rgba(0,0,0,1)</color>
+			<reliefDir>bottom</reliefDir>
+			<reliefColor>rgba(255,255,255,0.4)</reliefColor>
+		</variable>						
+		<variable type="style" name="LeftAxisTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(220,0,0,1)</color>
+		</variable>
+		<variable type="style" name="RightAxisTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(0,0,150,1.0)</color>
+		</variable>
+
+	</variables>
+
+	<chartOptions>
+		<background>
+			<innerPadding>10</innerPadding>
+			<innerPaddingTop>20</innerPaddingTop>
+			<color>rgba(153,191,247,1.0)</color>
+			<borderRoundness>10</borderRoundness>
+			<borderWidth>10</borderWidth>
+			<borderStyle>embossed</borderStyle>
+ 			<surroundingWebsiteColor>rgba(255,255,255,1.0)</surroundingWebsiteColor>
+ 			<borderColor>rgba(0,0,0,1)</borderColor>
+ 			<shadowSize>7</shadowSize>
+ 			<shadowColor>rgba(0,10,25,1.0)</shadowColor>
+ 			<style>style_2</style>
+  		</background>
+  		
+  		<valueBar>
+  			<style>plain</style>
+  			<shadow>false</shadow>
+			<sizePercentage>0.30</sizePercentage>
+			<axisSpacingStart>10</axisSpacingStart>
+			<axisSpacingEnd>10</axisSpacingEnd>
+  		</valueBar>
+  		
+  		<valueLine>
+  			<lineWidth>2</lineWidth>
+  		</valueLine>
+  		
+  		<valuePoint>
+  			<size>7</size>
+  		</valuePoint>
+
+  		<axis>
+  			<color>$BLACK</color>
+  			<arrowType>triangle</arrowType>
+  			<arrowSize>10</arrowSize>
+  			<arrowOffset>5</arrowOffset>
+  		</axis>
+  		
+  		<axisTick>
+  			<color>$BLACK</color>
+  			<size>5</size>
+  			<paddingRightAxis>3</paddingRightAxis>
+			<paddingBottomAxis>3</paddingBottomAxis>
+			<paddingLeftAxis>3</paddingLeftAxis>  			
+  		</axisTick>
+  		
+		<popup>  			
+  		</popup>
+   
+		<horizontalGridLine>
+			<color>rgba(255, 255, 255, 0.4)</color>
+		</horizontalGridLine>
+
+		<verticalGridLine>
+			<color>rgba(255, 255, 255, 0.4)</color>
+		</verticalGridLine>
+		
+		<legendSymbol>
+			<type>circle</type>
+			<size>8</size>
+		</legendSymbol>
+		
+		<legendSymbol valueSetIndex="2">
+			<type>square</type>
+		</legendSymbol>
+
+		<legend>
+		  <width>123</width>
+		  <height>230</height>
+		  <padding>15</padding>
+		  <paddingTop>50</paddingTop>
+		  <image>
+			<imageUrl>$WEATHER_ICON</imageUrl>
+			<paddingTop>-80</paddingTop>
+			<paddingLeft>-50</paddingLeft>
+		  </image>
+		  <background>
+			<style>style_3</style>
+			<color>rgba(153,191,247,1.0)</color>
+			<glossyEffect>glossyEffect2</glossyEffect>
+			<borderStyle>embossed</borderStyle>
+		    <borderRoundness>10</borderRoundness>
+		  </background>
+		</legend>
+	
+		<title>
+			<paddingTop>0.007 * $chartHeight</paddingTop>
+			<paddingBottom>0.07 * $chartHeight</paddingBottom>
+		</title>
+
+		<footer>
+			<paddingTop>5</paddingTop>
+			<paddingLeft>32</paddingLeft>
+		</footer>
+		
+		<watermark>
+			<paddingRight>33</paddingRight>
+		</watermark>
+	
+	</chartOptions>
+	
+</theme>

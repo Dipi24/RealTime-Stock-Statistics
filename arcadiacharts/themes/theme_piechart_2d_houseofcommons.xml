@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<variables>
+
+		<variable name="DEFAULT_TEXT_COLOR" type="color" value="rgba( 0, 0, 0, 1.0 )"  />
+		
+		<variable type="color" name="VALUE_SET_COLOR_0" value="rgba( 150, 0, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_1" value="rgba( 0, 135, 220, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_2" value="rgba( 255, 215, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_3" value="rgba( 212, 106, 76, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_4" value="rgba( 255, 255, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_5" value="rgba( 0, 136, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_6" value="rgba( 96, 96, 96, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_7" value="rgba( 0, 0, 0, 1.0 )" />
+		<variable type="color" name="VALUE_SET_COLOR_8" value="rgba( 255, 255, 255, 1.0 )" />		
+
+		<variable type="style" name="TitleElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>16pt</fontSize>
+			<fontWeight>bold</fontWeight>
+			<color>rgba(0,28,14,1)</color>
+		</variable>
+		<variable type="style" name="FooterElement">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>10pt</fontSize>
+			<color>$BLACK</color>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="LegendTitle">
+			<fontFamily>DejaVuSans</fontFamily>
+			<color>rgba(0,0,0,1)</color>
+			<fontSize>10pt</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="small">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>9pt</fontSize>
+			<fontWeight>normal</fontWeight>
+		</variable>
+		<variable type="style" name="larger">
+			<fontFamily>DejaVuSans</fontFamily>
+			<fontSize>10pt</fontSize>
+			<fontWeight>normal</fontWeight>
+			<color>$BLACK</color>
+		</variable>
+	</variables>
+
+	<chartOptions>
+		
+		<background>
+				<style>style1</style>
+				<color>rgba(240,255,247,1)</color>
+				<borderRoundness>3</borderRoundness>
+				<shadowColor>0</shadowColor>
+				<borderStyle>bold</borderStyle>
+				<borderWidth>7</borderWidth>
+				<borderColor>rgba(1,97,49,1)</borderColor>		
+		</background>
+
+		<legend></legend>
+
+		<legendSymbol>
+			<marginTop>-1</marginTop>
+		</legendSymbol>
+		
+		<valueSlice>
+			<style>3d</style>
+		</valueSlice>
+		
+		<popup>
+			<style>style4</style>
+		</popup>
+
+		<title>
+			<paddingTop>0.03 * $chartHeight</paddingTop>
+			<paddingBottom>0.04 * $chartHeight</paddingBottom>
+		</title>
+	
+	</chartOptions>
+
+</theme>
